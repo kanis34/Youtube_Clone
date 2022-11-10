@@ -1,0 +1,160 @@
+.header_div{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 100; /* search bar will be displayed above the video grid */
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(218, 214, 214);
+
+   
+}
+.left_section_div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 150px;
+}
+.hamburger_menu{
+    margin-left: 30px;
+    height: 20px;
+}
+.youtube_logo{
+    margin-left: 10px;
+    height: 20px;
+}
+.middle_section_div{
+    max-width: 500px;
+    flex: 1; /*for remaining space*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search-bar{
+    height: 33px;
+    flex: 1;
+    border: none;
+    border-color: rgb(226, 225, 225);
+    border-style: solid;
+    border-width: 1px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 16px;
+    padding-left: 10px;
+    width: 0;
+}
+.search-bar::placeholder{
+    font-family: Lucida Sans;
+    font-size: 13px;
+}
+.search_button, .upload_image_container, .youtube_app_container, .notification_container{
+    height: 38px;
+    width: 50px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: -1px;
+    margin-right: 10px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_button .tooltip, .upload_image_container .tooltip, .youtube_app_container .tooltip, .notification_container .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 10px;
+    bottom: -30px;
+    opacity: 0; /*we can't see this div though it is present*/
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search_button:hover .tooltip, .upload_image_container:hover .tooltip, .youtube_app_container:hover .tooltip, .notification_container:hover .tooltip{
+    opacity: 1;
+}
+.search_image{
+    height: 20px;
+}
+.voice_icon-button{
+    height: 39px;
+    width: 40px;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.voice_icon{
+    height: 20px;
+    justify-content: flex-end;
+}
+.voice_icon-button .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 10px;
+    bottom: -30px;
+    opacity: 0; /*we can't see this div though it is present*/
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.voice_icon-button:hover .tooltip{
+    opacity: 1;
+}
+.right_section_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.upload_image{
+    height: 20px;
+}
+.youtube_app_image{
+    height: 20px;
+}
+.notification_container{
+    position: relative;
+}
+.notification_count{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgb(243, 105, 105);
+    border-radius: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 14px;
+    
+}
+.notification_image{
+    height: 20px;
+    width: 20px;
+}
+.my_profile_pic{
+    height: 30px;
+    border-radius: 30px;
+}

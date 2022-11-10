@@ -1,0 +1,26 @@
+.sidebar_div{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    width: 72px;
+    background-color: white;
+    z-index: 300;  /*sidebar is upper than header */
+    padding-top: 5px;
+}
+.sidebar_link{
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebar_link img{
+    height: 20px;
+    margin-bottom: 4px;
+}
+.sidebar_link div{
+    font-size: 9px;
+    font-weight: 600;
+}
